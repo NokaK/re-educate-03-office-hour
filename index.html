@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <!-- <h1 class="animate__animated animate__backInDown animate__faster">An animated element</h1>
+    <div class="image-wrapper">
+        <img class="animate__animated animate__slideInLeft animate__delay-1s " src="./horse.svg" alt="horse">
+    </div> -->
+
+    <div class="container">
+        <header class="flex space-between ">
+            <a href="index.html">logo</a>
+            <nav class="descktop-nav">
+                <ul class="flex">
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a href="#">company</a>
+                    </li>
+                    <li>
+                        <a href="#">IT Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="burger" class="mobile-burger">
+                burger
+            </div>
+            <div class="hide mobile-navigation" id="mobile">
+                <nav class="mobile-nav">
+                    <ul>
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">company</a>
+                        </li>
+                        <li>
+                            <a href="#">IT Solutions</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+    </div>
+    <section class="agency">
+        <div>
+            <div class="title-wrapper flex space-between">
+                <h1 class="animate__animated animate__slideInLeft animate__delay-1s"> We are the best software agency
+                </h1>
+                <p class="animate__animated animate__slideInLeft animate__delay-2s">
+                    The best software agency ever is we, Softcore, have served more than 32 years well and certainly
+                    make you comfortable and safe
+                </p>
+            </div>
+            <div class="image animate__animated animate__slideInLeft">
+                <img src="./horse.svg" alt="horse">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="service-title-wrapper">
+                <h2 class="animate__animated animate__slideInLeft animate__delay-4s">Why should you use
+                    our services</h2>
+                <p class="animate__animated animate__slideInLeft animate__delay-5s"> Why you have to use our services,
+                    because you will get a very satisfying
+                    service and your goods are guaranteed safe</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const burger = document.getElementById('burger')
+        const mobile = document.getElementById('mobile')
+        burger.addEventListener('click', () => {
+            mobile.classList.toggle('show')
+            mobile.classList.toggle('hide')
+        })
+    </script>
+</body>
+
+</html>

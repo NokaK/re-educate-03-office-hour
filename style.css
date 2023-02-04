@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h1 {
+  display: flex;
+}
+h1:before {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 2px;
+  background-color: black;
+  margin-right: 10px;
+}
+h1:after {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 2px;
+  background-color: black;
+  margin-left: 10px;
+} */
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* global styles */
+
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header styles */
+header {
+  padding: 40px 0;
+}
+/* body {
+  overflow: hidden;
+} */
+header nav li {
+  margin-left: 40px;
+}
+.mobile-burger {
+  display: none;
+}
+.hide {
+  right: -100%;
+  /* display: none; */
+}
+.show {
+  right: 0;
+  /* display: block; */
+}
+nav {
+  height: 100%;
+}
+.mobile-navigation {
+  background-color: white;
+  position: fixed;
+  /* left: 0; */
+  top: 95px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: right 0.5s;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.mobile-nav li {
+  margin-bottom: 20px;
+}
+/* section styles */
+
+.agency {
+  background-color: cornflowerblue;
+}
+.title-wrapper h1 {
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 84px;
+}
+.title-wrapper p {
+  max-width: 606px;
+  font-size: 24px;
+  line-height: 40px;
+}
+.image {
+  background-color: grey;
+  position: relative;
+  bottom: -50px;
+}
+
+.image img {
+  width: 100%;
+}
+.services {
+  background-color: darkslategray;
+  padding: 100px 0;
+  /* height: 900px; */
+}
+
+@media (max-width: 1024px) {
+  .mobile-burger {
+    display: block;
+  }
+  .descktop-nav {
+    display: none;
+  }
+
+  .title-wrapper {
+    flex-direction: column;
+  }
+  .title-wrapper h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .title-wrapper p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
